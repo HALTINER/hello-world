@@ -189,6 +189,7 @@ print ( "\n \n  now its ..  " ,  datetime.datetime.now() , "\n \n  .... \n" )
 for line in FileData:
     if re.search(r"DATE", line):
         i +=1
+<<<<<<< HEAD
         print ("found at #", i, line.rstrip())
 
 
@@ -227,3 +228,6 @@ x, y = map(lons*180./np.pi, lats*180./np.pi)
 cs = map.contour(x,y,wave+mean,15,linewidths=1.5)
 plt.title('contour lines over filled continent background')
 plt.show()
+=======
+        print ("found at #", i, line.rstrip())
+>>>>>>> 9e919b7995f437e84f226a4e8b9b438e65dc58b3
